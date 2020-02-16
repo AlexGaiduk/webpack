@@ -1,29 +1,33 @@
 {
-  "name": "babel",
+  "name": "webpack",
   "version": "1.0.0",
-  "description": "babel",
+  "description": "webpack",
   "main": "index.js",
   "scripts": {
+    "serve": "http-server dist",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "babel src -d dist"
+    "build": "webpack --mode production"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AlexGaiduk/babel.git"
+    "url": "git+https://github.com/AlexGaiduk/webpack.git"
   },
-  "keywords": [
-    "game"
-  ],
   "author": "alexgaiduk",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/AlexGaiduk/babel/issues"
+    "url": "https://github.com/AlexGaiduk/webpack/issues"
   },
-  "homepage": "https://github.com/AlexGaiduk/babel#readme",
+  "homepage": "https://github.com/AlexGaiduk/webpack#readme",
     "devDependencies": {
-    "@babel/cli": "^7.8.4",
     "@babel/core": "^7.8.4",
-    "@babel/preset-env": "^7.8.4"
+    "@babel/preset-env": "^7.8.4",
+    "babel-loader": "^8.0.6",
+    "css-loader": "^3.4.2",
+    "html-webpack-plugin": "^3.2.0",
+    "http-server": "^0.12.1",
+    "mini-css-extract-plugin": "^0.9.0",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10"
   },
   "dependencies": {
     "core-js": "^3.6.4"
